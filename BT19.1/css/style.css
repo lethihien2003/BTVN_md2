@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    
+}
+body div{
+    color: #999999;
+}
+h4{
+    color: black;
+    font-weight: 600;
+}
+h5{
+    color: black;
+    font-weight: 550;
+}
+/* header  */
+#header {
+    height: 80px;
+    margin: 40px 0;
+}
+.header .row {
+    display: flex;
+    align-items: center; /* Canh giữa theo chiều dọc */
+    justify-content: space-between; /* Cân đối khoảng cách giữa các cột */
+}
+.header h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+}
+.header-logo {
+    /* font-size: 24px; */
+}
+.header-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0; 
+}
+.header i{
+    margin-right: 5px;
+    color: #00CC99;
+}
+.header-menu a{
+    text-decoration: none;
+    color: #999999;
+    /* justify-content: space-between; */
+}
+.header-button {
+    background-color: #00CC99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.text_right{
+    text-align: right;
+}
+
+.banner_container{
+    width: 100%;
+    height: auto;
+    color: #999999;
+    line-height: 1.8;
+}
+.banner_container .row{
+    flex-wrap: nowrap;
+}
+.banner_container h1{
+    color: black;
+    font-weight: 600;
+}
+.banner_container .row .col-6{
+    
+}
+.banner_icon i{
+    border: 1px solid #999999;
+    padding: 5px;
+    margin: 5px;
+}
+.banner_icon .fa-facebook-f{
+    color: #151559;
+}
+.banner_icon .fa-instagram{
+    color: #FF0000;
+}
+.banner_icon .fa-twitter{
+    color: #00FFFF;
+}
+.banner_icon .fa-github{
+    color: #0000FF;
+}
+#banner .button{
+    margin-top: 10px;
+}
+.banner-button{
+    color: #00CC99;
+    background-color: #FFFFFF;
+    border: 1px solid #00CC99;
+    
+}
+.image_banner{
+    background-image: linear-gradient(-180deg ,rgba(112, 76, 76, 0.108), rgba(0 , 0, 0, 0.9)),  
+	url(/BT19.1/img/hero-3-img.png);
+    height: 500px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transition: background-size 0.5s;
+}
+
+
+.content_container{
+    width: 100%;
+    height: auto;
+}
+.text-align{
+    text-align: center;
+}
+.content_one{
+    max-width: 100%;
+}
+.content_one .row{
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+}
+.content_one .row {
+    margin: 40px auto;
+}
+.content_one .row .col{
+    text-align: center;
+    border: 1px solid #999999 ;
+    margin:20px;  
+}
+.content_one i{
+    margin: 20px 0;
+    font-size: 40px;
+}
+.content_one span{
+    color: black;
+    font-weight: 600;
+}
+
+/*  */
+.content_one .row {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .content_one .slider-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .content_one .col {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .content_one .col i {
+    font-size: 48px;
+  }
+
+
+.content_two{
+    max-width: 100%;
+    background-color: #F8F8FF;
+    background-origin: border-box;
+}
+.content_two .row{
+    margin: 40px 0;
+}
+.image_two{
+    background-image: linear-gradient(-180deg ,rgba(1,1,1,0), rgba(0 , 0, 0, 0.9)),  
+	url(/BT19.1/img/chat.png);
+    height: 500px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transition: background-size 0.5s;
+    margin: 40px auto;
+}
+.content_two .col-6{
+    padding: 40px 60px;
+}
+.content_two .col-6 .row .col{
+    border: 1px solid #999999 ;
+    padding: 10px;
+    margin-right:20px;  
+}
+.content_two span{
+    color: black;
+    font-weight: 800;
+}
+.content_two i{
+    color: #FF9933	;
+    margin-right: 5px;
+}
+
+.content_three{
+    max-width: 100%;  
+}
+.content_three .row{
+    margin: 40px auto;
+}
+.content_three .row .col{
+    /* margin: 20px; */
+}
+.content_three i{
+    color: #FFFFFF;
+    margin: 10px 0;
+    font-size: 20px;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 50%;
+}
+.content_three .fa-user-friends{
+    background-color: #9933CC;
+}
+.content_three .fa-windows{
+    background-color: #FFCC33	;
+}
+.content_three .fa-window-restore{
+    background-color: #FF3333;
+}
+.content_three .fa-calendar-week{
+    background-color: #00CC99;
+}
+.content_three .fa-wrench{
+    background-color: #696969;
+}
+.content_three .fa-weight-hanging{
+    background-color: #A0522D;
+}
+.border{
+    border: 5px groove #DDDD;
+}
+.content_three a{
+    color: black;
+}
+.content_three a span i{
+    border: none;
+    color: black;
+}
+
+.content_four{
+    max-width: 100%;
+}
+.content_four .row {
+    margin: 40px auto;
+}
+.image_four{
+    background-image: linear-gradient(-180deg ,rgba(250, 245, 245, 0), rgba(0 , 0, 0, 0.9)),  
+	url(/BT19.1/img/faq.png);
+    height: 500px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transition: background-size 0.5s;
+}
+
+.content_five{
+    max-width: 100%;
+    background-color: #F8F8FF;
+    padding-top: 40px;
+    
+}
+.content_five .row .col{
+    margin:  40px auto;
+}
+.content_five .row .col .row .col{
+    text-align: center;
+    border: 1px solid #999999 ;
+    background-color: #FFFFFF;
+    padding: 20px;
+    line-height: 2;
+    margin-right: 10px ;
+}
+.content_five li{
+    list-style: none;
+    color: black;
+    line-height: 3.0;
+}
+.content_five li::before{
+    content: "\2666";
+    color: #00CC99;
+}
+.price{
+    font-size: 30px;
+}
+.border_bg{
+    background-color: #151559;
+    border: 1px solid #151559 ;
+    border-radius: 2px;
+}
+
+.content_six{
+    max-width: 100%;
+    margin: 40px auto;
+}
+.content_six .row{
+    margin: 40px auto;
+}
+.content_six .content_text{
+    text-align: center;
+}
+.content_six i{
+    font-size: 40px;
+    color: #00CC99;
+    padding-bottom: 10px;
+}
+pre{
+    font-family: Arial, sans-serif;
+}
+
+.content_seven{
+    max-width: 100%;
+    
+}
+
+.content_seven .row .col-8{
+    background-color: #F8F8FF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin: 40px auto;
+}
+.image_seven{
+    background-image: linear-gradient(-180deg ,rgba(1,1,1,0), rgba(0 , 0, 0, 0.9)),  
+	url(/BT19.1/img/subscribe-img.png);
+    height: 300px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transition: background-size 0.5s; 
+}
+.content_seven h5{
+    color: #00CC99;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.content_eight{
+    max-width: 100%;
+    
+}
+.content_eight .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.content_eight .row .col{
+    color: #999999;
+    margin: 40px auto;
+}
+.content_eight .row .col h3{
+    font-size: 20px;
+}
+.content_eight i{
+    padding-right: 5px;
+}
+
+/* footer */
+.footer{
+    max-width: 100%;
+    color: #999999;
+    background-color: #151559;
+}
+.footer .row .col {
+    margin: 40px 0;
+}
+.footer i{
+    color: #00CC99;
+    margin-right: 5px;
+}
+.text_white{
+    color: #FFFFFF;
+}
+.text_green{
+    color: #00CC99;
+}
+.footer li{
+    line-height: 2;
+}
+.map-container {
+    padding-top: 60px;
+    position: relative;
+}
+.map-overlay {
+    position: absolute;
+    top: 45%; 
+    left: 45%; 
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+.text-align p{
+    padding-bottom: 40px;
+}
+
+
+/*  */
+.content{
+	display: none;
+	padding: 15px 35px;
+	line-height: 25px;
+}
+.content_four button {
+    border: none;
+    margin-left: 90%;
+    margin-top: 0;
+
+  }
+/* Responsive */
+/* Kích thước mobile */
+@media (min-width: 320px) and(max-width: 767px) {
+    .header-menu{
+        display: none;
+    }
+    .header-button{
+        display: none;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+
+}
+
+/* Kích thước tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-menu{
+        display: none;
+    }
+    .header-button{
+        display: none;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-toggler{
+        display: none;
+    }
+}
